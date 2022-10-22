@@ -1,0 +1,155 @@
+* {box-sizing: border-box}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: Outfit;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 500;
+    color: white;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    width: 370px; /*change this property for the card to be responsive. but changing this does not compress the contents*/
+}
+
+.frame {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    display: flexbox;
+    flex-direction: column;
+    margin: auto;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    flex-wrap: wrap;
+}
+
+.row0{
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.row1, .row2  {
+    display: flex;
+    align-items: center;
+}
+
+.row1{
+    justify-content: space-between;
+}
+
+.row2{
+    padding-top: 20px;
+}
+
+.rightSet{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 400;
+    width: 170px;
+}
+
+.leftSet{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 170px;
+}
+
+.ETH{
+    color: hsl(178, 100%, 50%);
+}
+
+.image {
+    display: flex;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    align-self: center;
+    
+}
+
+.overlay{
+    position: fixed;
+    transform: translate(-20px, -200px);
+    width: auto;
+    transition: .5s ease;
+    opacity:0;
+    border-radius: 10px;
+    
+    text-align: center;
+    align-items: center;
+}
+
+.icon {
+    max-height: 2em;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+hr{
+    color: hsl(215, 32%, 27%);
+    border-top: 1px;
+    border-style: solid;
+    margin: 0%;
+}
+
+.pic{
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: white;
+    max-width: 2em;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin-right: 1em;
+}
+
+.ProfileName{
+    color: white;
+}
+
+.overlay:hover, :focus{
+    opacity: 0.7;   
+    background-color: aquamarine;
+    cursor: pointer;
+    
+}
+
+
+h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+span.ProfileName:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
